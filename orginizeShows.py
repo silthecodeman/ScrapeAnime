@@ -5,8 +5,8 @@ import re
 
 def cleanShowUrls(listOfUrls):
 	setup = {
-			'Title':[],
-	 		'URL':[],
+		'Title':[],
+	 	'URL':[],
 	        'Number of Episodes':[],
 	        'Status':[]
 	       }
