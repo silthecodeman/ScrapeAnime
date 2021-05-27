@@ -12,4 +12,5 @@ pip install -r requirements.txt
 ```
 
 #Documentation
+
 ## ScrapeAnime.
