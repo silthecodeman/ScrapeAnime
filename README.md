@@ -11,7 +11,16 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ## Prerequisites and Other Information
-GNU Wget must be installed for the script to work. This program has only been tested on macOS Big Sur Version 11.3.1 and is expected to work the same on Linux. This program has only been tested with Python 3.9.5 and will most likely work with Python 3.7 and up.
+GNU Wget must be installed for the script to work. 
+For macOS:
+```bash 
+brew install wget
+```
+For Linux:
+```bash
+sudo apt-get install wget
+```
+Google Chrome must be installed as well as ChromeDriver. ChromeDriver must be in the directory '/Users/username/Documents/geckodrivermac/' on macOS, if on Linux or any other operating system, one can select their own directory on line 19 of 'main.py' under the variable 'driverPath'. Both Google Chrome and ChromeDriver can be downloaded on https://www.google.com/chrome/ and https://chromedriver.chromium.org/downloads . This program has only been tested on macOS Big Sur Version 11.3.1 and is expected to work the same on Linux. This program has only been tested with Python 3.9.5 and will most likely work with Python 3.7 and up. Only Google Chrome version 
 
 ## How to Use
 To initially run the program, the file 'main.py' needs to be run in the terminal.
