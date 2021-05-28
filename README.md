@@ -14,6 +14,10 @@ pip install -r requirements.txt
 GNU Wget must be installed for the script to work. This program has only been tested on macOS Big Sur Version 11.3.1 and is expected to work the same on Linux. This program has only been tested with Python 3.9.5 and will most likely work with Python 3.7 and up.
 
 ## How to Use
+To initially run the program, the file 'main.py' needs to be run in the terminal.
+```bash
+python3 main.py
+```
 When runing the program, the comand line will prompt the user to enter a url. 
 ```bash
 Anime URL >> 
