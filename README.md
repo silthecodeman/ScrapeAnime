@@ -11,7 +11,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 ## Prerequisites and Other Information
-'wget' must be installed for the script to work. This program has only been tested on macOS Big Sur Version 11.3.1 and is expected to work the same on Linux. This program has only been tested with Python 3.9.5 and will most likely work with Python 3.7 and up.
+GNU Wget must be installed for the script to work. This program has only been tested on macOS Big Sur Version 11.3.1 and is expected to work the same on Linux. This program has only been tested with Python 3.9.5 and will most likely work with Python 3.7 and up.
 
 ## How to Use
 When runing the program, the comand line will prompt the user to enter a url. 
