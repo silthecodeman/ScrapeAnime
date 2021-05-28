@@ -14,17 +14,42 @@ pip install -r requirements.txt
 ## How to Use
 When runing the program, the comand line will prompt the user to enter a url. 
 ```bash
-
+Anime URL >> 
 ```
 This url is specific to 'ww1.JustDubs.tv' and will only work if it is a url that leads to the home page of the intended anime. The page in question should also contin a list of the anime's episodes as well as general information. Go to https://ww1.justdubs.tv/anime/1565-akame-ga-kill-english-dub for an example of what the url should look like.
 
 Next, the comand prompt will ask if there is any more shows you wish to download.
 ```bash
-
+Are there any more show urls? [Y/n] 
 ```
 
-The program will then orginize the anime and it's episodes into a folder named 'Animes'.
+If there is, the program will ask for another url and the process will be repeated until there are no more urls to be scraped.
+The program will then run and orginize the anime and it's episodes into a folder named 'Animes'.
+
+As a rule of thumb, don't be discuraged if the program takes a while to run as there are several variables that could be the cause for the time delay including file size or internet connection.
+
+## Issues
+There are no issues execpt for the fact that some anime are stored in different databases and thus when the program attemmpts to use the command 'wget' it fails. However during the creation of this project, there was but one instnace of this occuring and refusing to download.
 
 # Documentation
 
-## ScrapeAnime.
+## dataScrapeFunctions.get_mp4_file_adress(driver_path, url)
+'url' refers to the url that was imputed by the user at the beginning of the program.
+'driver_path' refers to the path of the Chrome driver used by Selenium.
+
+The function returns the url of the .mp4 file. 
+
+## downloadEpisode(URL, driver_path, download_path)
+'URL' refers to the url of the .mp4 file.
+'driver_path' refers to the path of the Chrome driver used by Selenium.
+'download_path' is the .mp4 file name and path to the .mp4 file (this is where the .mp4 file will be downloaded).
+
+The funciton does not return anything but downloads the anime episode that the 'URL' variable has.
+
+## getEpisodesDF(df)
+'df' refers to a dataframe that is specific to the a pandas.DataFrame containing a url(s) and other information and data pertaining to it.
+
+The function returns another dataframe that contains the name of the anime and urls of the anime's episodes.
+
+## cleanShowUrls(listOfUrls)
+'listOfUrls' refers to the list of urls that were submited by the user at the beginning of the program.
