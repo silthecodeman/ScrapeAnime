@@ -16,8 +16,7 @@ import os
 import re
 
 if __name__ == "__main__":
-	pathelem = [i for i in os.getcwd()[1:].split('/')]
-	driverPath = '/{}/{}/Documents/geckodrivermac/chromedriver'.format(pathelem[0], pathelem[1])
+	driverPath = '/{}/{}/Documents/geckodrivermac/chromedriver'.format([i for i in os.getcwd()[1:].split('/')][0], [i for i in os.getcwd()[1:].split('/')][1])
 
 	Done = True 
 
