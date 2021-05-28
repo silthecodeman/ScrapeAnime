@@ -10,6 +10,8 @@ python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
+## Prerequisites and Other Information
+'wget' must be installed for the script to work. This program has only been tested on macOS Big Sur Version 11.3.1 and is expected to work the same on Linux. This program has only been tested with Python 3.9.5 and will most likely work with Python 3.7 and up.
 
 ## How to Use
 When runing the program, the comand line will prompt the user to enter a url. 
@@ -39,17 +41,17 @@ There are no issues execpt for the fact that some anime are stored in different 
 
 The function returns the url of the .mp4 file. 
 
-## downloadEpisode(URL, driver_path, download_path)
+## dataScrapeFunctions.downloadEpisode(URL, driver_path, download_path)
 'URL' refers to the url of the .mp4 file.
 'driver_path' refers to the path of the Chrome driver used by Selenium.
 'download_path' is the .mp4 file name and path to the .mp4 file (this is where the .mp4 file will be downloaded).
 
 The funciton does not return anything but downloads the anime episode that the 'URL' variable has.
 
-## getEpisodesDF(df)
+## dataScrapeFunctions.getEpisodesDF(df)
 'df' refers to a dataframe that is specific to the a pandas.DataFrame containing a url(s) and other information and data pertaining to it.
 
 The function returns another dataframe that contains the name of the anime and urls of the anime's episodes.
 
-## cleanShowUrls(listOfUrls)
+## dataScrapeFunctions.cleanShowUrls(listOfUrls)
 'listOfUrls' refers to the list of urls that were submited by the user at the beginning of the program.
