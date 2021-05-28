@@ -22,7 +22,7 @@ When runing the program, the comand line will prompt the user to enter a url.
 ```bash
 Anime URL >> 
 ```
-This url is specific to 'ww1.JustDubs.tv' and will only work if it is a url that leads to the home page of the intended anime. The page in question should also contin a list of the anime's episodes as well as general information. Go to https://ww1.justdubs.tv/anime/1565-akame-ga-kill-english-dub for an example of what the url should look like.
+This url is specific to 'ww1.JustDubs.tv' and will only work if it is a url that leads to the home page of the intended anime. The page in question should also contin a list of the anime's episodes as well as general information. Go to https://ww1.justdubs.tv/anime/3106-hack-quantum-english-dub for an example of what the url should look like.
 
 Next, the comand prompt will ask if there is any more shows you wish to download.
 ```bash
